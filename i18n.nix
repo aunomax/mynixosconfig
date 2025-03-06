@@ -26,27 +26,27 @@
         fcitx5-gtk
       ];
       waylandFrontend = true;
-      ignoreUserConfig = true;
+      #ignoreUserConfig = true;
       settings = {
         addons = {
           classicui.globalSection.Theme = "FluentDark-solid";
           pinyin.globalSection.FirstRun = "False";
         };
-        inputMethod = {
-          "Groups/0" = {
-            Name = "Default";
-            "Default Layout" = "us";
-            DefaultIM = "keyboard-us";
-          };
-          "Groups/0/Items/0" = {
-            Name = "keyboard-us";
-            Layout = "";
-          };
-          "Groups/0/Items/1" = {
-            Name = "pinyin";
-            Layout = "";
-          };
-        };
+#         inputMethod = {
+#           "Groups/0" = {
+#             Name = "Default";
+#             "Default Layout" = "us";
+#             DefaultIM = "keyboard-us";
+#           };
+#           "Groups/0/Items/0" = {
+#             Name = "keyboard-us";
+#             Layout = "";
+#           };
+#           "Groups/0/Items/1" = {
+#             Name = "pinyin";
+#             Layout = "";
+#           };
+#         };
       };
     };
   };

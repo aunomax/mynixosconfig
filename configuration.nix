@@ -119,13 +119,15 @@
     code-cursor
     vscodium
     #v2raya
-    #clash-verge-rev
+    clash-verge-rev
 
     git
     openssh
     wget
     flclash
     pot
+
+    alist
   ];
 
   environment.variables.EDITOR = "helix";
@@ -177,6 +179,7 @@
 
   # List services that you want to enable:
 
+  services.onedrive.enable = true;
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
