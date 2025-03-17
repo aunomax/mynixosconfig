@@ -66,6 +66,7 @@
     font-awesome
     powerline-fonts
     powerline-symbols
+    maple-mono
   ];
     fontconfig = {
       antialias = true;

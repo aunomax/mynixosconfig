@@ -119,7 +119,7 @@
     code-cursor
     vscodium
     #v2raya
-    clash-verge-rev
+    #clash-verge-rev
 
     git
     openssh
