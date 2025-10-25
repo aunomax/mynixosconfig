@@ -47,7 +47,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -125,12 +125,12 @@
     openssh
     wget
     flclash
-    pot
+    #pot
 
-    alist
+    #alist
   ];
 
-  environment.variables.EDITOR = "helix";
+  environment.variables.EDITOR = "hx";
   #environment.variables = {
   #  GTK_IM_MODULE = "fcitx";
   #  QT_IM_MODULE = "fcitx";
@@ -179,7 +179,7 @@
 
   # List services that you want to enable:
 
-  services.onedrive.enable = true;
+  # services.onedrive.enable = true;
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 

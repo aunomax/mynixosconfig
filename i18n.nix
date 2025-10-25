@@ -55,7 +55,7 @@
 
   fonts = {
     packages = with pkgs; [
-      fira-code-nerdfont
+      nerd-fonts.fira-code
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
       noto-fonts-emoji
@@ -66,8 +66,8 @@
     font-awesome
     powerline-fonts
     powerline-symbols
-    maple-mono
-  ];
+    maple-mono.NF-CN-unhinted
+     ];
     fontconfig = {
       antialias = true;
       hinting.enable = true;

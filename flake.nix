@@ -3,7 +3,7 @@
 
   inputs = {
     # NixOS 官方软件源，这里使用 nixos-24.11 分支
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
