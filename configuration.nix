@@ -84,7 +84,7 @@
     description = "Xuan Mao";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      kdePackages.kate
+      helix
     #  thunderbird
     ];
   };
@@ -108,26 +108,20 @@
   #  wget
     helix
     alacritty
-    mpv
     chromium
     #discord
     telegram-desktop
-    texstudio
     texliveFull
     zotero
     jabref
-    code-cursor
     vscodium
-    #v2raya
-    #clash-verge-rev
-
+  htop
+  rsync
     git
     openssh
     wget
     flclash
-    #pot
-
-    #alist
+    vlc
   ];
 
   environment.variables.EDITOR = "hx";
@@ -165,8 +159,9 @@
   networking.firewall.allowedUDPPorts = [ 1080 2017 443 80 7890 7891 ]; 
   
   nix.settings.substituters = [
-  "https://mirrors.ustc.edu.cn/nix-channels/store"
-  "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
+    "https://mirrors.cernet.edu.cn/nix-channels/store"
+#  "https://mirrors.ustc.edu.cn/nix-channels/store"
+#  "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -183,6 +178,25 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+  services.jellyfin = {
+    enable = true;
+    openFirewall = true;
+    user = "mao";
+  };
+
+  services.immich = {
+    enable = true;
+    host = "0.0.0.0";
+    port = 2283;
+    openFirewall = true;
+  };
+  services = {
+    paperless.enable = true;
+    paperless.address = "0.0.0.0";
+  };
+
+  hardware.graphics.enable = true;
+  
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];

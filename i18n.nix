@@ -22,7 +22,7 @@
     type = "fcitx5";
     fcitx5 = {
       addons = with pkgs; [
-        fcitx5-chinese-addons
+        qt6Packages.fcitx5-chinese-addons
         fcitx5-gtk
       ];
       waylandFrontend = true;
@@ -58,7 +58,6 @@
       nerd-fonts.fira-code
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
-      noto-fonts-emoji
       wqy_microhei
       wqy_zenhei
     jetbrains-mono
